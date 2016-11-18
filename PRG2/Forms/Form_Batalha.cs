@@ -68,14 +68,31 @@ namespace PRG2
             //
             label_Vida1.Enabled = true;
             //
-            for (int i = 0; i < jogador1.GetPersonagens[PAtivo1].GetArmas.Count; i++)
+            if (jogador1.GetPersonagens[PAtivo1].GetArmas.Count <= 1)
             {
-                comboBox_Arma1.Items.Add(jogador1.GetPersonagens[PAtivo1].GetArmas[i].GetNome);
+                comboBox_Arma1.Enabled = false;
+                comboBox_Arma1.Items.Add(jogador1.GetPersonagens[PAtivo1].GetArmas[0].GetNome);
             }
-            for (int i = 0; i < jogador2.GetPersonagens[PAtivo2].GetArmas.Count; i++)
+            else
             {
-                comboBox_Arma2.Items.Add(jogador2.GetPersonagens[PAtivo2].GetArmas[i].GetNome);
+                for (int i = 0; i < jogador1.GetPersonagens[PAtivo1].GetArmas.Count; i++)
+                {
+                    comboBox_Arma1.Items.Add(jogador1.GetPersonagens[PAtivo1].GetArmas[i].GetNome);
+                }
             }
+            if (jogador2.GetPersonagens[PAtivo2].GetArmas.Count <= 1)
+            {
+                comboBox_Arma2.Enabled = false;
+                comboBox_Arma2.Items.Add(jogador2.GetPersonagens[PAtivo2].GetArmas[0].GetNome);
+            }
+            else
+            {
+                for (int i = 0; i < jogador2.GetPersonagens[PAtivo2].GetArmas.Count; i++)
+                {
+                    comboBox_Arma2.Items.Add(jogador2.GetPersonagens[PAtivo2].GetArmas[i].GetNome);
+                }
+            }
+            
             comboBox_Arma1.SelectedIndex = 0;
             comboBox_Arma2.SelectedIndex = 0;
             //            
@@ -247,17 +264,21 @@ namespace PRG2
                 progressBar_Mana2.Value = jogador2.GetPersonagens[PAtivo2].GetMana;
                 //
                 label_Vida2.Text = jogador2.GetPersonagens[PAtivo2].GetVida.ToString();
-                label_Mana1.Text = jogador1.GetPersonagens[PAtivo1].GetMana.ToString();
+                label_Mana1.Text = jogador1.GetPersonagens[PAtivo1].GetMana.ToString();                
+                //
+                if (jogador2.GetPersonagens[PAtivo2].GetArmas.Count > 1)
+                {
+                    comboBox_Arma2.Enabled = true;
+                    button_TrocarArma2.Enabled = true;
+                }
+                //                
+                comboBox_Magia2.Enabled = true;
+                button_Magia2.Enabled = true;
                 //
                 comboBox_Arma1.Enabled = false;
                 button_TrocarArma1.Enabled = false;
                 comboBox_Magia1.Enabled = false;
                 button_Magia1.Enabled = false;
-                //
-                comboBox_Arma2.Enabled = true;
-                button_TrocarArma2.Enabled = true;
-                comboBox_Magia2.Enabled = true;
-                button_Magia2.Enabled = true;
                 //
                 Ativo = false;
             }
@@ -273,8 +294,11 @@ namespace PRG2
                 label_Vida1.Text = jogador1.GetPersonagens[PAtivo1].GetVida.ToString();
                 label_Mana2.Text = jogador2.GetPersonagens[PAtivo2].GetMana.ToString();
                 //
-                comboBox_Arma1.Enabled = true;
-                button_TrocarArma1.Enabled = true;
+                if (jogador1.GetPersonagens[PAtivo1].GetArmas.Count > 1)
+                {
+                    comboBox_Arma1.Enabled = true;
+                    button_TrocarArma1.Enabled = true;
+                }                
                 comboBox_Magia1.Enabled = true;
                 button_Magia1.Enabled = true;
                 //
@@ -329,6 +353,109 @@ namespace PRG2
 
             }
         }
+        private void button_TrocaPersonagem_Click(object sender, EventArgs e)
+        {
+            if (Ativo == false)
+            {
+                if (jogador1.GetNumeroPersonagens > PAtivo1)
+                {
+                    nome = comboBox_Personagens.SelectedItem.ToString();
+                    MessageBox.Show(nome);
+                    for (int i = 0; i < jogador1.GetPersonagens.Count; i++)
+                    {
+                        if (nome == jogador1.GetPersonagens[i].nome)
+                        {
+                            PAtivo1 = i;
+                        }
+                    }
+                    //
+                    //Personagem do jogador 1 morreu trocar personagem do jogador 1
+                    img1 = aplicacao + "/imgs/" + jogador1.GetPersonagens[PAtivo1].GetNome + ".jpg";
+                    pictureBox_Personagem1.ImageLocation = img1;
+                    //
+                    label_Mana1.Text = jogador1.GetPersonagens[PAtivo1].GetMana.ToString();
+                    label_Personagem1.Text = jogador1.GetPersonagens[PAtivo1].GetNome;
+                    //
+                    progressBar_Vida1.Maximum = jogador1.GetPersonagens[PAtivo1].GetVida;
+                    progressBar_Mana1.Maximum = jogador1.GetPersonagens[PAtivo1].GetMana;
+                    MaxMana1 = jogador1.GetPersonagens[PAtivo1].GetMana;
+                    //
+                    comboBox_Arma1.Items.Clear();
+
+                    if (jogador1.GetPersonagens[PAtivo1].GetArmas.Count <= 1)
+                    {
+                        comboBox_Arma1.Enabled = false;
+                        comboBox_Arma1.Items.Add(jogador1.GetPersonagens[PAtivo1].GetArmas[0].GetNome);
+                    }
+                    else
+                    {
+                        for (int i = 0; i < jogador1.GetPersonagens[PAtivo1].GetArmas.Count; i++)
+                        {
+                            comboBox_Arma1.Items.Add(jogador1.GetPersonagens[PAtivo1].GetArmas[i].GetNome);
+                        }
+                    }
+                    comboBox_Magia1.Items.Clear();
+                    comboBox_Magia1.SelectedText = null;
+                    for (int x = 0; x < jogador1.GetPersonagens[PAtivo1].GetMagias.Count; x++)
+                    {
+                        comboBox_Magia1.Items.Add(jogador1.GetPersonagens[PAtivo1].GetMagias[x].GetNome);
+                    }
+                    //
+                    comboBox_Arma1.SelectedIndex = 0;
+                    TrocaVez();
+                }
+            }
+            else
+            {
+                if (jogador2.GetNumeroPersonagens > PAtivo2)
+                {
+                    nome = comboBox_Personagens.SelectedItem.ToString();
+                    MessageBox.Show(nome);
+                    for (int i = 0; i < jogador2.GetPersonagens.Count; i++)
+                    {
+                        if (nome == jogador2.GetPersonagens[i].nome)
+                        {
+                            PAtivo2 = i;
+                        }
+                    }
+                    //
+                    img2 = aplicacao + "/imgs/" + jogador2.GetPersonagens[PAtivo2].GetNome + ".jpg";
+                    pictureBox_Personagem2.ImageLocation = img2;
+                    //                
+                    label_Mana2.Text = jogador2.GetPersonagens[PAtivo2].GetMana.ToString();
+                    label_Personagem2.Text = jogador2.GetPersonagens[PAtivo2].GetNome;
+                    //                
+                    progressBar_Vida2.Maximum = jogador2.GetPersonagens[PAtivo2].GetVida;
+                    progressBar_Mana2.Maximum = jogador2.GetPersonagens[PAtivo2].GetMana;
+                    MaxMana2 = jogador2.GetPersonagens[PAtivo2].GetMana;
+                    //
+                    comboBox_Arma2.Items.Clear();
+
+                    if (jogador2.GetPersonagens[PAtivo2].GetArmas.Count <= 1)
+                    {
+                        comboBox_Arma2.Enabled = false;
+                        comboBox_Arma2.Items.Add(jogador2.GetPersonagens[PAtivo2].GetArmas[0].GetNome);
+                    }
+                    else
+                    {
+                        for (int i = 0; i < jogador2.GetPersonagens[PAtivo2].GetArmas.Count; i++)
+                        {
+                            comboBox_Arma2.Items.Add(jogador2.GetPersonagens[PAtivo2].GetArmas[i].GetNome);
+                        }
+                    }
+                    comboBox_Magia2.Items.Clear();
+                    comboBox_Magia1.SelectedText = null;
+                    for (int x = 0; x < jogador2.GetPersonagens[PAtivo2].GetMagias.Count; x++)
+                    {
+                        comboBox_Magia2.Items.Add(jogador2.GetPersonagens[PAtivo2].GetMagias[x].GetNome);
+                    }
+                    //
+                    comboBox_Personagens.Enabled = false;
+                    comboBox_Arma2.SelectedIndex = 0;
+                    TrocaVez();
+                }
+            }
+        }
         //
         public void Venceu()
         {
@@ -364,92 +491,7 @@ namespace PRG2
                 }
             }
 
-        }
-        //
-        private void button_TrocaPersonagem_Click(object sender, EventArgs e)
-        {
-            if (Ativo == false)
-            {
-                if (jogador1.GetNumeroPersonagens > PAtivo1)
-                {
-                    nome = comboBox_Personagens.SelectedItem.ToString();
-                    MessageBox.Show(nome);
-                    for (int i = 0; i < jogador1.GetPersonagens.Count; i++)
-                    {
-                        if (nome == jogador1.GetPersonagens[i].nome)
-                        {
-                            PAtivo1 = i;
-                        }
-                    }
-                    //
-                    //Personagem do jogador 1 morreu trocar personagem do jogador 1
-                    img1 = aplicacao + "/imgs/" + jogador1.GetPersonagens[PAtivo1].GetNome + ".jpg";
-                    pictureBox_Personagem1.ImageLocation = img1;
-                    //
-                    label_Mana1.Text = jogador1.GetPersonagens[PAtivo1].GetMana.ToString();
-                    label_Personagem1.Text = jogador1.GetPersonagens[PAtivo1].GetNome;
-                    //
-                    progressBar_Vida1.Maximum = jogador1.GetPersonagens[PAtivo1].GetVida;
-                    progressBar_Mana1.Maximum = jogador1.GetPersonagens[PAtivo1].GetMana;
-                    MaxMana1 = jogador1.GetPersonagens[PAtivo1].GetMana;
-                    //
-                    comboBox_Arma1.Items.Clear();
-                    for (int i = 0; i < jogador1.GetPersonagens[PAtivo1].GetArmas.Count; i++)
-                    {
-                        comboBox_Arma1.Items.Add(jogador1.GetPersonagens[PAtivo1].GetArmas[i].GetNome);
-                    }
-                    comboBox_Magia1.Items.Clear();
-                    comboBox_Magia1.SelectedText = null;
-                    for (int x = 0; x < jogador1.GetPersonagens[PAtivo1].GetMagias.Count; x++)
-                    {
-                        comboBox_Magia1.Items.Add(jogador1.GetPersonagens[PAtivo1].GetMagias[x].GetNome);
-                    }
-                    //
-                    TrocaVez();
-                }
-            }
-            else
-            {
-                if (jogador2.GetNumeroPersonagens > PAtivo2)
-                {
-                    nome = comboBox_Personagens.SelectedItem.ToString();
-                    MessageBox.Show(nome);
-                    for (int i = 0; i < jogador2.GetPersonagens.Count; i++)
-                    {
-                        if (nome == jogador2.GetPersonagens[i].nome)
-                        {
-                            PAtivo2 = i;
-                        }
-                    }
-                    //
-                    img2 = aplicacao + "/imgs/" + jogador2.GetPersonagens[PAtivo2].GetNome + ".jpg";
-                    pictureBox_Personagem2.ImageLocation = img2;
-                    //                
-                    label_Mana2.Text = jogador2.GetPersonagens[PAtivo2].GetMana.ToString();
-                    label_Personagem2.Text = jogador2.GetPersonagens[PAtivo2].GetNome;
-                    //                
-                    progressBar_Vida2.Maximum = jogador2.GetPersonagens[PAtivo2].GetVida;
-                    progressBar_Mana2.Maximum = jogador2.GetPersonagens[PAtivo2].GetMana;
-                    MaxMana2 = jogador2.GetPersonagens[PAtivo2].GetMana;
-                    //
-                    comboBox_Arma2.Items.Clear();
-                    for (int i = 0; i < jogador2.GetPersonagens[PAtivo2].GetArmas.Count; i++)
-                    {
-                        comboBox_Arma2.Items.Add(jogador2.GetPersonagens[PAtivo2].GetArmas[i].GetNome);
-                    }
-
-                    comboBox_Magia2.Items.Clear();
-                    comboBox_Magia1.SelectedText = null;
-                    for (int x = 0; x < jogador2.GetPersonagens[PAtivo2].GetMagias.Count; x++)
-                    {
-                        comboBox_Magia2.Items.Add(jogador2.GetPersonagens[PAtivo2].GetMagias[x].GetNome);
-                    }
-                    //
-                    comboBox_Personagens.Enabled = false;
-                    TrocaVez();
-                }
-            }
-        }
+        }        
         //
         public void TrocaImagem()
         {

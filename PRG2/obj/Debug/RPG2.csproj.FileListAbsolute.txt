@@ -1,0 +1,15 @@
+C:\Users\mateu\Source\Repos\RPG\PRG2\bin\Debug\PRG2.exe.config
+C:\Users\mateu\Source\Repos\RPG\PRG2\obj\Debug\PRG2.exe
+C:\Users\mateu\Source\Repos\RPG\PRG2\obj\Debug\PRG2.pdb
+C:\Users\mateu\Source\Repos\RPG\PRG2\bin\Debug\PRG2.exe
+C:\Users\mateu\Source\Repos\RPG\PRG2\bin\Debug\PRG2.pdb
+C:\Users\mateu\Source\Repos\RPG\PRG2\obj\Debug\RPG2.csprojResolveAssemblyReference.cache
+C:\Users\mateu\Source\Repos\RPG\PRG2\obj\Debug\PRG2.Form1.resources
+C:\Users\mateu\Source\Repos\RPG\PRG2\obj\Debug\PRG2.Form_Batalha.resources
+C:\Users\mateu\Source\Repos\RPG\PRG2\obj\Debug\PRG2.Form_NovoJogo.resources
+C:\Users\mateu\Source\Repos\RPG\PRG2\obj\Debug\PRG2.Form_OdimPaideTodos.resources
+C:\Users\mateu\Source\Repos\RPG\PRG2\obj\Debug\PRG2.Form_Selecao.resources
+C:\Users\mateu\Source\Repos\RPG\PRG2\obj\Debug\PRG2.Form_TelaInicial.resources
+C:\Users\mateu\Source\Repos\RPG\PRG2\obj\Debug\PRG2.Form_Magia.resources
+C:\Users\mateu\Source\Repos\RPG\PRG2\obj\Debug\PRG2.Properties.Resources.resources
+C:\Users\mateu\Source\Repos\RPG\PRG2\obj\Debug\RPG2.csproj.GenerateResource.Cache
