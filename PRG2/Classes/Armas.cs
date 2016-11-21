@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace PRG2
 {
+    [Serializable]
     class Armas
     {
         string nome;

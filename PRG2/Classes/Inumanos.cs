@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace PRG2
 {
+    [Serializable]
     class Inumanos : Personagem
     {
         public Inumanos(string nome, int vida, int mana, int ForçaFisica, int ForçaMagica, int ResistenciaFisica, int ResistenciaMagica, int Agilidade, Armas Arsenal)

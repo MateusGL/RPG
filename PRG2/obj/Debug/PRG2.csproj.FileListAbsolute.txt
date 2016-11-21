@@ -86,18 +86,72 @@ C:\Users\mateu\Documents\Visual Studio 2015\Projects\v3\PRG2\PRG2\obj\Debug\PRG2
 C:\Users\mateu\Documents\Visual Studio 2015\Projects\v3\2016-11-14\PRG2\PRG2\bin\Debug\PRG2.exe.config
 C:\Users\mateu\Documents\Visual Studio 2015\Projects\v3\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.exe
 C:\Users\mateu\Documents\Visual Studio 2015\Projects\v3\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.pdb
-C:\Users\937812\Downloads\2016-11-14\2016-11-14\PRG2\PRG2\bin\Debug\PRG2.exe.config
-C:\Users\937812\Downloads\2016-11-14\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.exe
-C:\Users\937812\Downloads\2016-11-14\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.pdb
-C:\Users\937812\Downloads\2016-11-14\2016-11-14\PRG2\PRG2\bin\Debug\PRG2.exe
-C:\Users\937812\Downloads\2016-11-14\2016-11-14\PRG2\PRG2\bin\Debug\PRG2.pdb
-C:\Users\937812\Downloads\2016-11-14\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.csprojResolveAssemblyReference.cache
-C:\Users\937812\Downloads\2016-11-14\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form1.resources
-C:\Users\937812\Downloads\2016-11-14\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form_Batalha.resources
-C:\Users\937812\Downloads\2016-11-14\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form_NovoJogo.resources
-C:\Users\937812\Downloads\2016-11-14\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form_OdimPaideTodos.resources
-C:\Users\937812\Downloads\2016-11-14\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form_Selecao.resources
-C:\Users\937812\Downloads\2016-11-14\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form_TelaInicial.resources
-C:\Users\937812\Downloads\2016-11-14\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form_Magia.resources
-C:\Users\937812\Downloads\2016-11-14\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Properties.Resources.resources
-C:\Users\937812\Downloads\2016-11-14\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.csproj.GenerateResource.Cache
+C:\Users\diogol\Downloads\2016-11-14\PRG2\PRG2\bin\Debug\PRG2.exe.config
+C:\Users\diogol\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.exe
+C:\Users\diogol\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.pdb
+C:\Users\diogol\Downloads\2016-11-14\PRG2\PRG2\bin\Debug\PRG2.exe
+C:\Users\diogol\Downloads\2016-11-14\PRG2\PRG2\bin\Debug\PRG2.pdb
+C:\Users\diogol\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.csprojResolveAssemblyReference.cache
+C:\Users\diogol\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form1.resources
+C:\Users\diogol\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form_Batalha.resources
+C:\Users\diogol\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form_NovoJogo.resources
+C:\Users\diogol\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form_OdimPaideTodos.resources
+C:\Users\diogol\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form_Selecao.resources
+C:\Users\diogol\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form_TelaInicial.resources
+C:\Users\diogol\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form_Magia.resources
+C:\Users\diogol\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Properties.Resources.resources
+C:\Users\diogol\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.csproj.GenerateResource.Cache
+C:\Users\1035264\Downloads\2016-11-14\PRG2\PRG2\bin\Debug\PRG2.exe.config
+C:\Users\1035264\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.exe
+C:\Users\1035264\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.pdb
+C:\Users\1035264\Downloads\2016-11-14\PRG2\PRG2\bin\Debug\PRG2.exe
+C:\Users\1035264\Downloads\2016-11-14\PRG2\PRG2\bin\Debug\PRG2.pdb
+C:\Users\1035264\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.csprojResolveAssemblyReference.cache
+C:\Users\1035264\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form1.resources
+C:\Users\1035264\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form_Batalha.resources
+C:\Users\1035264\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form_NovoJogo.resources
+C:\Users\1035264\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form_OdimPaideTodos.resources
+C:\Users\1035264\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form_Selecao.resources
+C:\Users\1035264\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form_TelaInicial.resources
+C:\Users\1035264\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Form_Magia.resources
+C:\Users\1035264\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.Properties.Resources.resources
+C:\Users\1035264\Downloads\2016-11-14\PRG2\PRG2\obj\Debug\PRG2.csproj.GenerateResource.Cache
+C:\Users\Carlos\Desktop\2016-11-19\PRG2\PRG2\bin\Debug\PRG2.exe.config
+C:\Users\Carlos\Desktop\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.exe
+C:\Users\Carlos\Desktop\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.pdb
+C:\Users\Carlos\Desktop\2016-11-19\PRG2\PRG2\bin\Debug\PRG2.exe
+C:\Users\Carlos\Desktop\2016-11-19\PRG2\PRG2\bin\Debug\PRG2.pdb
+C:\Users\Carlos\Desktop\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Desktop\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form1.resources
+C:\Users\Carlos\Desktop\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form_Batalha.resources
+C:\Users\Carlos\Desktop\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form_NovoJogo.resources
+C:\Users\Carlos\Desktop\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form_OdimPaideTodos.resources
+C:\Users\Carlos\Desktop\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form_Selecao.resources
+C:\Users\Carlos\Desktop\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form_TelaInicial.resources
+C:\Users\Carlos\Desktop\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form_Magia.resources
+C:\Users\Carlos\Desktop\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Properties.Resources.resources
+C:\Users\Carlos\Desktop\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.csproj.GenerateResource.Cache
+C:\Users\Carlos\Desktop\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form_Pontuacao.resources
+C:\Users\Carlos\Desktop\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form_Salvar.resources
+C:\Users\Carlos\Desktop\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form_Carregar.resources
+C:\Users\ARTHUR\Desktop\não entendo essa aula\2016-11-19\PRG2\PRG2\bin\Debug\PRG2.exe.config
+C:\Users\ARTHUR\Desktop\não entendo essa aula\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.exe
+C:\Users\ARTHUR\Desktop\não entendo essa aula\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.pdb
+C:\Users\ARTHUR\Desktop\não entendo essa aula\2016-11-19\PRG2\PRG2\bin\Debug\PRG2.exe
+C:\Users\ARTHUR\Desktop\não entendo essa aula\2016-11-19\PRG2\PRG2\bin\Debug\PRG2.pdb
+C:\Users\ARTHUR\Desktop\não entendo essa aula\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.csprojResolveAssemblyReference.cache
+C:\Users\ARTHUR\Desktop\não entendo essa aula\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form1.resources
+C:\Users\ARTHUR\Desktop\não entendo essa aula\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form_Batalha.resources
+C:\Users\ARTHUR\Desktop\não entendo essa aula\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form_NovoJogo.resources
+C:\Users\ARTHUR\Desktop\não entendo essa aula\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form_OdimPaideTodos.resources
+C:\Users\ARTHUR\Desktop\não entendo essa aula\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form_Selecao.resources
+C:\Users\ARTHUR\Desktop\não entendo essa aula\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form_TelaInicial.resources
+C:\Users\ARTHUR\Desktop\não entendo essa aula\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form_Magia.resources
+C:\Users\ARTHUR\Desktop\não entendo essa aula\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form_Pontuacao.resources
+C:\Users\ARTHUR\Desktop\não entendo essa aula\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form_Salvar.resources
+C:\Users\ARTHUR\Desktop\não entendo essa aula\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Form_Carregar.resources
+C:\Users\ARTHUR\Desktop\não entendo essa aula\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.Properties.Resources.resources
+C:\Users\ARTHUR\Desktop\não entendo essa aula\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.csproj.GenerateResource.Cache
+C:\Users\mateu\Downloads\2016-11-21\2016-11-19\PRG2\PRG2\bin\Debug\PRG2.exe.config
+C:\Users\mateu\Downloads\2016-11-21\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.exe
+C:\Users\mateu\Downloads\2016-11-21\2016-11-19\PRG2\PRG2\obj\Debug\PRG2.pdb

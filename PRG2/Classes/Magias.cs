@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace PRG2.Classes
 {
+    [Serializable]
     class Magias
     {
         int dano, custo;

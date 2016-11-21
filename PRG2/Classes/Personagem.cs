@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace PRG2
 {
+    [Serializable]
     class Personagem
     {
         List<Armas> Arma = new List<Armas>();
         List<Classes.Magias> Magia = new List<Classes.Magias>();
+        Save save = new Save();
+
+        
+
+        
         public List<Armas> GetArmas
         {
             get
@@ -66,14 +72,40 @@ namespace PRG2
             }
         }
 
+        public int VidaTotal
+        {
+            get
+            {
+                return vidatotal;
+            }
+            set
+            {
+                vidatotal = value;
+            }
+        }
+
+        public int ManaTotal
+        {
+            get
+            {
+                return manatotal;
+            }
+            set
+            {
+                manatotal = value;
+            }
+        }
+
         public int vida;
         public int Mana;
+        public int vidatotal;
+        public int manatotal;
         public int ForçaFisica;
         public int ForçaMagica;
         public int ResistenciaFisica;
         public int ResistenciaMagica;
         public int Agilidade;
-        public string nome;
+        public string nome;        
         public void AtaqueF(int Dano)
         {
            vida -= (Dano - ResistenciaFisica);
@@ -86,6 +118,7 @@ namespace PRG2
         {
             GetMagias.Add(Magia);
         }
+                
 
     }
 }

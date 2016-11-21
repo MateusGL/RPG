@@ -16,12 +16,97 @@ namespace PRG2
             InitializeComponent();
             jogador1 = j1;
             jogador2 = j2;
+
+            button_Play.Enabled = false;
+
+        }
+
+        private void habilitar_botao_play()
+        {
+            bool aux_inu = false;
+            bool aux_hum = false;
+
+
+            if (checkBox_Animal.Checked == true || checkBox_Dragao.Checked == true || checkBox_Troll.Checked == true || checkBox_Zumbi.Checked == true)
+            {
+                aux_inu = true;
+            }
+            if (checkBox_Guerreiro.Checked == true || checkBox_Ladrao.Checked == true || checkBox_Mago.Checked == true || checkBox_Paladino.Checked == true)
+            {
+                aux_hum = true;
+            }
+            if (aux_hum == true && aux_inu == true)
+            {
+                button_Play.Enabled = true;
+            }
+            
+
+            else button_Play.Enabled = false;
+        }
+
+        private void checkBox_Guerreiro_CheckedChanged(object sender, EventArgs e)
+        {
+            habilitar_botao_play();
+        }
+
+        private void checkBox_Paladino_CheckedChanged(object sender, EventArgs e)
+        {
+            habilitar_botao_play();
+        }
+
+        private void checkBox_Ladrao_CheckedChanged(object sender, EventArgs e)
+        {
+            habilitar_botao_play();
+        }
+
+        private void checkBox_Mago_CheckedChanged(object sender, EventArgs e)
+        {
+            habilitar_botao_play();
+        }
+
+        private void checkBox_Dragao_CheckedChanged(object sender, EventArgs e)
+        {
+            habilitar_botao_play();
+        }
+
+        private void checkBox_Animal_CheckedChanged(object sender, EventArgs e)
+        {
+            habilitar_botao_play();
+        }
+
+        private void checkBox_Troll_CheckedChanged(object sender, EventArgs e)
+        {
+            habilitar_botao_play();
+        }
+
+        private void checkBox_Zumbi_CheckedChanged(object sender, EventArgs e)
+        {
+            habilitar_botao_play();
+        }
+        Form1 novo;
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            novo = new Form_TelaInicial();
+            novo.Closed += (s, args) => this.Close();
+            novo.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            novo = new Form_NovoJogo();
+            novo.Closed += (s, args) => this.Close();
+            novo.Show();
         }
 
         private void button_Play_Click(object sender, EventArgs e)
         {
             Classes.Magias Magia;
             int x = 0;
+
+            //Fazer tratamento para quando nenhum personagem for selecionado
+            //if () { }
 
             // Guerreiro
             if (checkBox_Guerreiro.Checked == true)
@@ -34,6 +119,8 @@ namespace PRG2
                 x = jogador1.GetNumeroPersonagens;
                 Magia = new Classes.Magias("Tempestade", 200, 12, false);
                 jogador1.GetPersonagens[x - 1].AddMagia(Magia);
+                jogador1.GetPersonagens[x - 1].vidatotal = 4000;
+                jogador1.GetPersonagens[x - 1].manatotal = 30;
             }
 
             // Paladino
@@ -54,6 +141,8 @@ namespace PRG2
                 //
                 Magia = new Classes.Magias("Tempestade", 200, 12,false);
                 jogador1.GetPersonagens[x - 1].AddMagia(Magia);
+                jogador1.GetPersonagens[x - 1].vidatotal = 3200;
+                jogador1.GetPersonagens[x - 1].manatotal = 80;
             }
 
             // Ladrao
@@ -73,6 +162,8 @@ namespace PRG2
                 //
                 Magia = new Classes.Magias("Tempestade", 200, 12,false);
                 jogador1.GetPersonagens[x - 1].AddMagia(Magia);
+                jogador1.GetPersonagens[x - 1].vidatotal = 2800;
+                jogador1.GetPersonagens[x - 1].manatotal = 50;
             }
 
             // Mago
@@ -102,6 +193,8 @@ namespace PRG2
                 //
                 Magia = new Classes.Magias("Tempestade", 200, 12,false);
                 jogador1.GetPersonagens[x - 1].AddMagia(Magia);
+                jogador1.GetPersonagens[x - 1].vidatotal = 2500;
+                jogador1.GetPersonagens[x - 1].manatotal = 100;
             }
 
             //
@@ -119,6 +212,8 @@ namespace PRG2
                 x = jogador2.GetNumeroPersonagens;
                 Magia = new Classes.Magias("Hálito de Fogo", 400, 12, false);
                 jogador2.GetPersonagens[x - 1].AddMagia(Magia);
+                jogador2.GetPersonagens[x - 1].vidatotal = 3000;
+                jogador2.GetPersonagens[x - 1].manatotal = 40;
             }
             // Animal
             if (checkBox_Animal.Checked == true)
@@ -131,6 +226,8 @@ namespace PRG2
                 x = jogador2.GetNumeroPersonagens;
                 Magia = new Classes.Magias("Bio", 360, 14, false);
                 jogador2.GetPersonagens[x - 1].AddMagia(Magia);
+                jogador2.GetPersonagens[x - 1].vidatotal = 3200;
+                jogador2.GetPersonagens[x - 1].manatotal = 30;
             }
             //  Troll
             if (checkBox_Troll.Checked == true)
@@ -144,6 +241,8 @@ namespace PRG2
                 x = jogador2.GetNumeroPersonagens;
                 Magia = new Classes.Magias("Intoxicação", 280, 12, false);
                 jogador2.GetPersonagens[x - 1].AddMagia(Magia);
+                jogador2.GetPersonagens[x - 1].vidatotal = 2800;
+                jogador2.GetPersonagens[x - 1].manatotal = 20;
             }
             //  Zumbi
             if (checkBox_Zumbi.Checked == true)
@@ -158,9 +257,13 @@ namespace PRG2
                 x = jogador2.GetNumeroPersonagens;
                 Magia = new Classes.Magias("Intoxicação", 280, 12, false);
                 jogador2.GetPersonagens[x - 1].AddMagia(Magia);
+                jogador2.GetPersonagens[x - 1].vidatotal = 2500;
+                jogador2.GetPersonagens[x - 1].manatotal = 20;
             }
+            this.Hide();
             Form novo = new Form_Batalha(jogador1, jogador2);
-            novo.Show();
+            novo.FormClosed += (s, args) => this.Close();
+            novo.Show();            
         }
     }
 }
