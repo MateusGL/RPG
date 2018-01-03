@@ -1,15 +1,15 @@
-# RPG
-Trabalho interdisciplinar de POO 2-2016
+# Trabalho interdisciplinar de POO - RPG
+Semestre 2-2016
 
-RPG de combate entre humanos e inumanos com elementos de ataques, fisico e magico
+RPG de combate simples com personagens humanos e inumanos, possui elementos de ataques e defesa fisicos e magicos, e armas que podem ser trocadas.
 
-Humanos
+Personagens Humanos
 -Guerreiro
 -Paladino
 -Ladrao
 -Mago
 
-Inumanos
+Personagens Inumanos
 -Animal
 -Zumbi
 -Troll
